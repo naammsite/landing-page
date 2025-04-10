@@ -1,0 +1,83 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>NaamSITE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background: linear-gradient(
+          135deg,
+          #1e3c72 0%,
+          #2a5298 50%,
+          #1e3c72 100%
+        );
+      }
+    </style>
+  </head>
+  <body class="text-white">
+    <header class="flex justify-between items-center p-6">
+      <div class="flex items-center space-x-2">
+        <img alt="Logo" class="w-[80px] h-[80px] rounded-full object-cover" height="10" src="nabaya.jpg" width="10" />
+        <div>
+          <h1 class="text-lg font-bold">NaamSITE</h1>
+          <p class="text-sm">Kenalin, Halaman Baru Gue   </p>
+        </div>
+      </div>
+      <nav class="space-x-6">
+        <a class="hover:underline" href="contact.html">Contact</a>
+        <a class="hover:underline" href="about.html">About</a>
+        <a class="hover:underline" href="page.html">Page</a>
+        <a
+          class="bg-white text-blue-600 px-4 py-2 rounded-full hover:bg-gray-200"
+          href="index.html"
+          >Home</a
+        >
+      </nav>
+    </header>
+    <main
+      class="flex flex-col items-center justify-center h-screen text-center"
+    >
+      <h2 class="text-5xl font-bold mb-2">NAAM KECE, Jangan Naksir</h2>
+      <p class="text-2xl mb-4">Apa itu desain, Polosan Lah</p>
+      <p class="text-lg mb-8 max-w-md">
+        Web ini dibikin bukan buat gaya-gayaan.... 
+        tapi biar hidup lo makin gampang
+      </p>
+      <div class="space-x-4">
+        <button
+          id="GaskeunBroBtn"
+          class="bg-transparent border-2 border-white text-white px-6 py-2 rounded-full hover:bg-white hover:text-blue-600"
+        >
+          Gaskeun Bro
+        </button>
+        <button
+          id="NantiBroBtn"
+          class="bg-white text-blue-600 px-6 py-2 rounded-full hover:bg-gray-200"
+        >
+          Nanti Bro
+        </button>
+      </div>
+    </main>
+    <script>
+      document
+        .getElementById("GaskeunBroBtn")
+        .addEventListener("click", function () {
+        const nama = prompt("Sebut nama lo dulu, Biar makin akrab:");
+        alert("COMING SOON Nak ,  " + nama + "!");
+        });
+        
+      document
+        .getElementById("NantiBroBtn")
+        .addEventListener("click", function () {
+          const nama = prompt("APA ALASAN LO GAK JOIN SEKARANG?");
+        alert("APAPUN ITU THANK YOU UDAH MAMPIR DI HALAMAN SITUS GUE!");
+        });
+    </script>
+  </body>
+</html>
